@@ -1,33 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nikza\\source\\repos\\lab4\\",
+  "WorkspaceRootPath": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\lab4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\lab4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\NonlinearEquations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\NonlinearEquations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\NonlinearEquations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\lab4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\lab4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\exe_main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09E3AF7C-F909-4888-9798-19F818CEDA1A}|lab4\\lab4.vcxproj|solutionrelative:lab4\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,9 +40,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "lab4.cpp",
-              "DocumentMoniker": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\lab4.cpp",
+              "DocumentMoniker": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\lab4.cpp",
               "RelativeDocumentMoniker": "lab4\\lab4.cpp",
-              "ToolTip": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\lab4.cpp",
+              "ToolTip": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\lab4.cpp",
               "RelativeToolTip": "lab4\\lab4.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -56,79 +53,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NonlinearEquations.h",
+              "DocumentMoniker": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\NonlinearEquations.h",
+              "RelativeDocumentMoniker": "lab4\\NonlinearEquations.h",
+              "ToolTip": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\NonlinearEquations.h",
+              "RelativeToolTip": "lab4\\NonlinearEquations.h",
+              "ViewState": "AQIAAAYBAAAAAAAAAAAkwBgBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-24T09:20:58.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "in.txt",
-              "DocumentMoniker": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\in.txt",
+              "DocumentMoniker": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\in.txt",
               "RelativeDocumentMoniker": "lab4\\in.txt",
-              "ToolTip": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\in.txt",
+              "ToolTip": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\in.txt",
               "RelativeToolTip": "lab4\\in.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-04-24T15:19:15.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "exe_main.cpp",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\exe_main.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\exe_main.cpp",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\exe_main.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\exe_main.cpp",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAswBAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-24T14:59:43.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Base.h",
-              "DocumentMoniker": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\Base.h",
+              "DocumentMoniker": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\Base.h",
               "RelativeDocumentMoniker": "lab4\\Base.h",
-              "ToolTip": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\Base.h",
+              "ToolTip": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\Base.h",
               "RelativeToolTip": "lab4\\Base.h",
-              "ViewState": "AQIAAGsBAAAAAAAAAAAswHUBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-24T13:57:11.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "vector.h",
-              "DocumentMoniker": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\vector.h",
+              "DocumentMoniker": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\vector.h",
               "RelativeDocumentMoniker": "lab4\\vector.h",
-              "ToolTip": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\vector.h",
+              "ToolTip": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\vector.h",
               "RelativeToolTip": "lab4\\vector.h",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAcwFUAAABGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-24T13:56:14.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "matrix.h",
-              "DocumentMoniker": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\matrix.h",
+              "DocumentMoniker": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\matrix.h",
               "RelativeDocumentMoniker": "lab4\\matrix.h",
-              "ToolTip": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\matrix.h",
+              "ToolTip": "C:\\Users\\nikza\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab3Chm-master\\lab 4\\lab4\\matrix.h",
               "RelativeToolTip": "lab4\\matrix.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAALQAAAABAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAawIkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-24T09:28:27.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NonlinearEquations.h",
-              "DocumentMoniker": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\NonlinearEquations.h",
-              "RelativeDocumentMoniker": "lab4\\NonlinearEquations.h",
-              "ToolTip": "C:\\Users\\nikza\\source\\repos\\lab4\\lab4\\NonlinearEquations.h",
-              "RelativeToolTip": "lab4\\NonlinearEquations.h",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-24T09:20:58.746Z",
               "EditorCaption": ""
             }
           ]

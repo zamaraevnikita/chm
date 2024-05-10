@@ -41,15 +41,15 @@ namespace luMath
             _fout = std::ofstream("output.txt");
             T c;
             _fin >> c >> n;
-            _method = static_cast<METHOD>(c);
-            x0 = Vector<T>(n);
+            _method = static_cast<METHOD>(c); //метод
+            x0 = Vector<T>(n);// вектор начальных приблежений х0
             x0.transposition();
             for (int i = 0; i < n; i++)
             {
                 _fin >> c;
                 x0[i] = c;
             }
-            _fin >> eps;
+            _fin >> eps; // погрешность 
             FunSys = Vector<std::string>(n);
 
             _fin.seekg(2, std::ios_base::cur);
@@ -57,7 +57,7 @@ namespace luMath
                 getline(_fin, FunSys[i]);
 
             FunSys.transposition();
-            _fout << "\n\tСистема Нелинейных Уравнений:\n" << std::setw(5) << FunSys << '\n';
+            _fout << "\n\tСистема Нелинейных Уравнений:\n" << std::setw(5) << FunSys << '\n'; 
             _fin.close();
         }
         ~NonlinearEquations()
@@ -67,8 +67,11 @@ namespace luMath
 
         METHOD getMethod() { return _method; }
 
+        // Функция GaussMethod принимает матрицу A и вектор b в качестве аргументов и
+        // решает систему линейных уравнений методом Гаусса.
         static Vector<T> GaussMethod(const Matrix<T>& A, const Vector<T>& b)
         {
+            // Создаем расширенную матрицу путем добавления столбца b к матрице A.
             Matrix<T> expandedMatrix(A.getRows(), A.getCols() + 1);
             for (int i = 0; i < expandedMatrix.getRows(); i++)
                 for (int j = 0; j < expandedMatrix.getCols(); j++)
@@ -76,19 +79,27 @@ namespace luMath
                         expandedMatrix[i][j] = b[i];
                     else
                         expandedMatrix[i][j] = A[i][j];
+
+            // Вызываем вторую версию функции GaussMethod для решения системы с расширенной матрицей.
             return GaussMethod(expandedMatrix);
         }
 
+        // Вторая версия функции GaussMethod принимает расширенную матрицу в качестве аргумента
+        // и решает систему линейных уравнений методом Гаусса.
         static Vector<T> GaussMethod(const Matrix<T>& expandedMatrix)
         {
+            // Создаем временную копию расширенной матрицы.
             Matrix<T> tempMatrix(expandedMatrix);
 
+            // Применяем метод Гаусса для приведения матрицы к верхнетреугольному виду.
             for (int i = 0; i < tempMatrix.getRows(); i++)
             {
+                // Делим текущую строку на ведущий элемент.
                 T coeff = tempMatrix[i][i];
                 for (int j = i; j < tempMatrix.getRows() + 1; j++)
                     tempMatrix[i][j] /= coeff;
 
+                // Вычитаем текущую строку из последующих строк, чтобы обнулить элементы ниже ведущего элемента.
                 for (int j = i + 1; j < tempMatrix.getRows(); j++)
                 {
                     coeff = tempMatrix[j][i];
@@ -104,13 +115,13 @@ namespace luMath
             {
                 T sumCoeff = 0;
                 for (int j = i + 1; j < result.getLength(); j++)
-                    sumCoeff += tempMatrix[i][j] * result[j];
-
+                    sumCoeff += tempMatrix[i][j] * result[j]; //сумма произведений коэф
+                //значение переменной путем вычитания суммы
                 result[i] = tempMatrix[i][result.getLength()] - sumCoeff;
             }
             return result;
         }
-
+        //обратная матрица
         static Matrix<T> getInverseMatrixByMethod(Vector<T>(*Method)(const Matrix<T>&, const Vector<T>&), Matrix<T> matrix)
         {
             int m = matrix.getCols();
@@ -133,27 +144,37 @@ namespace luMath
 
             return inverseMatrix;
         }
-
+        //матрица якоби для метода итераций
         static Matrix<T>* getJacobi(Vector<std::string> FunSys, Vector<T> x)
         {
-            int n = x.getLength();
-            Matrix<T>* J = new Matrix<T>(n);
+            int n = x.getLength(); // Получаем размерность
+            Matrix<T>* J = new Matrix<T>(n); 
+            // Проходим по фунцкиям
             for (int i = 0; i < n; i++)
             {
-                const char* polStr = CreatePolStr(FunSys[i].c_str(), n);
+                const char* polStr = CreatePolStr(FunSys[i].c_str(), n);//вычисляем
                 if (GetError() == ERR_OK)
-                    for (int j = 0; j < n; j++)
+                {
+                    for (int j = 0; j < n; j++)//вычисляем производные переменных
                     {
                         const double* x_p = x.getPointer();
+
+                        // Вычисляем значение частной производной и записываем его в матрицу Якоби.
                         (*J)[i][j] = EvalPolStr(polStr, x_p, 1, j + 1);
-                        if (isnan((*J)[i][j]))   return NULL;
+                        
+                        if (isnan((*J)[i][j]))//NaN
+                            return NULL; // Возвращаем NULL в случае ошибки.
                     }
-                else std::cerr << "Error: " << GetError();
+                }
+                else
+                {
+                    std::cerr << "Error: " << GetError();
+                }
             }
-            return J;
+            return J;//указатель на матрицу
         }
 
-        // Вектор-столбец значений системы функций при заданных аргументах
+        // вычисляем значения функций и возврящаем их
         static Vector<T> getFunctionValues(Vector<std::string> FunSys, Vector<T> arg)
         {
             int n = FunSys.getLength();
@@ -178,7 +199,7 @@ namespace luMath
         {
             Matrix<T> Jacobi_T(Jacobi);
             Jacobi_T.transposition();
-            return 2 * Jacobi_T * x0;
+            return 2 * Jacobi_T * x0; // по формуле из методички
         }
 
         // Поиск параметра 'lambda'
@@ -190,69 +211,83 @@ namespace luMath
             Vector<T> g_T(g);
             g_T.transposition();
             return *((g_T * g).getPointer())
-                / *((2 * g_T * Jacobi_T * Jacobi * g).getPointer());
+                / *((2 * g_T * Jacobi_T * Jacobi * g).getPointer()); // по формуле из методички
         }
 
         // Метод Ньютона (модицицированный)
         Vector<T> Newton()
         {
-            _fout << "\n\tМетод Ньютона:\n\t";
+            _fout << "\n\tМетод Ньютона:\n\t"; 
             Vector<T> x1(x0);
-            int index = 0;
-            _fout << "x^[" << index << "]:\n" << x1 << "\n";
+            int index = 0; 
 
-            Matrix<T>* J = new Matrix<T>(n), * tempJ;
-            bool flag = true;
+            _fout << "x^[" << index << "]:\n" << x1 << "\n"; // 
+
+            Matrix<T>* J = new Matrix<T>(n), * tempJ; // Создаем указатель на матрицу Якоби.
+            bool flag = true; 
+
             do {
-                index++;
-                x0 = x1;
+                index++; 
+                x0 = x1; 
+
                 if (flag)
                 {
                     tempJ = getJacobi(FunSys, x0);
-                    if (tempJ) J = tempJ;
-                    else       flag = false;
+                    if (tempJ)
+                        J = tempJ; // Если удалось вычислить, сохраняем в указатель J.
+                    else
+                        flag = false; 
                 }
-                x1 = x0
-                    - getInverseMatrixByMethod(NonlinearEquations::GaussMethod, *J)
-                    * getFunctionValues(FunSys, x0);
-                _fout.width(10);
-                printIter(_fout, x1, index);
+
+                // Выполняем итерацию метода Ньютона: x1 = x0 - (обратная матрица Якоби) * (значения функций).
+                x1 = x0 - getInverseMatrixByMethod(NonlinearEquations::GaussMethod, *J) * getFunctionValues(FunSys, x0);
+
+                _fout.width(10); 
+                printIter(_fout, x1, index); 
 
             } while ((x1 - x0).getModule() >= eps && index < MAX_ITER);
-            delete[] J, tempJ;
+
+            delete[] J, tempJ; // 
             return x1;
         }
+
 
         // Метод Наискорейшего спуска
         Vector<T> SteepestDescent()
         {
-            _fout << "\n\tМетод Наискорейшего спуска:\n\t";
+            _fout << "\n\tМетод Наискорейшего спуска:\n\t"; // Вывод информации о методе в выходной файл.
 
-            Vector<T> x1(x0), f_x;
-            int index = 0;
-            _fout << "x^[" << index << "]:\n" << x1 << "\n";
+            Vector<T> x1(x0), f_x; 
+            int index = 0; 
+            _fout << "x^[" << index << "]:\n" << x1 << "\n"; 
 
             Matrix<T>* J = new Matrix<T>(n), * tempJ;
-            bool flag = true;
+            bool flag = true; 
+
             do {
-                index++;
-                x0 = x1;
+                index++; 
+                x0 = x1; 
+
                 if (flag)
                 {
-                    tempJ = getJacobi(FunSys, x0);
-                    if (tempJ) J = tempJ;
-                    else       flag = false;
+                    tempJ = getJacobi(FunSys, x0); 
+                    if (tempJ)
+                        J = tempJ; 
+                    else
+                        flag = false; 
                 }
-                f_x = Vector<T>(getFunctionValues(FunSys, x0));
-                x1 = x0
-                    - getMinimizingValue(*J, f_x, x0)
-                    * getGradientDirection(*J, f_x, x0);
-                _fout.width(10);
-                printIter(_fout, x1, index);
 
-            } while ((x1 - x0).getModule() >= eps && index < MAX_ITER);
-            delete J, tempJ;
-            return x1;
+                f_x = Vector<T>(getFunctionValues(FunSys, x0)); 
+
+                // x1=x0-лямбда*направление градиента
+                x1 = x0 - getMinimizingValue(*J, f_x, x0) * getGradientDirection(*J, f_x, x0);
+
+                _fout.width(10); 
+                printIter(_fout, x1, index); 
+            } while ((x1 - x0).getModule() >= eps && index < MAX_ITER); // Повторяем до достижения заданной точности или максимального количества итераций.
+
+            delete J, tempJ; 
+            return x1; 
         }
 
 
